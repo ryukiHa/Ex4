@@ -25,5 +25,9 @@ int main(){
         }
     }
     printf("Heads: %d, Tails: %d\n",couH,couT);
+
+    if(couH > couT) printf("%s won!\n");
+    else printf("%s lost\n",name);
+
     return 0;
 }
