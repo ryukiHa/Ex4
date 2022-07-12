@@ -4,11 +4,14 @@
 
 int main(){
     int i=0,couH=0,couT=0;
+    int x;
+    char name[100];
     srand((unsigned int)time(NULL));
+
 
     printf("Tossing a coin...\n");
     for(i=1 ; i<4 ; i++){
-        int x = rand()%2;
+        x = rand()%2;
         if(x==0){
             printf("Round %d: Heads\n",i);
             couH++;
@@ -18,6 +21,6 @@ int main(){
             couT++;
         }
     }
-    printf("Heads: %d, Tails: %d\n");
+    printf("Heads: %d, Tails: %d\n",couH,couT);
     return 0;
 }
