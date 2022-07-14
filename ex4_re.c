@@ -5,6 +5,7 @@
 int main(){
     int i=0,couH=0,couT=0;
     int x;
+    char name[100];
     srand((unsigned int)time(NULL));
 
     printf("Tossing a coin...\n");
@@ -20,6 +21,9 @@ int main(){
         }
     }
     printf("Heads: %d, Tails: %d\n",couH,couT);
+
+    if(couH > couT) printf("%s won!\n");
+    else printf("%s lost\n",name);
     
     return 0;
 }
